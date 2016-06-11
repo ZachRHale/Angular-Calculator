@@ -1,0 +1,51 @@
+html {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+html, body, .container, .row {
+	background-color:gray;
+}
+
+.calculator {
+	margin-top:100px;
+}
+
+ .col-xs-3, .col-xs-6, .total {
+ 	border-right: 1px solid black;
+ 	border-top: 1px solid black;
+ 	padding-top:3px;
+ 	padding-bottom:13px;
+ }
+
+ .total {
+ 	background-color:white;
+ }
+
+.first-button-row, .total {
+ 	border-left: 1px solid black;
+
+}
+
+.operation {
+	background:#e98a00;
+}
+
+.operation:active {
+	background:#995c00;
+}
+
+.top-row {
+	 background:#c2bfbe;
+}
+
+.top-row:active {
+	background:#9c9796;
+}
+
+.normal {
+	background: #e4e5e7;
+}
+
+.normal:active {
+	background:#bbbec3;
+}

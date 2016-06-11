@@ -1,0 +1,19 @@
+{
+  "name": "calculator-angular",
+  "version": "1.0.0",
+  "description": "A calculator built in Angular 1",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachRHale/Angular-Calculator.git"
+  },
+  "author": "Zachary hale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZachRHale/Angular-Calculator/issues"
+  },
+  "homepage": "https://github.com/ZachRHale/Angular-Calculator#readme"
+}

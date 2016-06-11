@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>A Recipe Book with Angular</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+</head>
+<body>
+	
+	<div class="container" ng-app="calculator" ng-controller="calcCtrl">
+		
+		<div class="row">
+			
+			<div class="col-sm-offset-3 col-sm-6 calculator">
+				<div class="container-fluid">
+
+					<div class="text-right row">
+						<div class="col-xs-12 total">
+							<h2>{{displayNumber}}</h2>
+						</div>
+					</div>
+
+					<div class="row text-center">
+						<div class="col-xs-3 first-button-row top-row" ng-click="reinit();">
+							<h3>C</h3>
+						</div>
+						<div class="col-xs-3 top-row">
+							<h3>+/-</h3>
+						</div>
+						<div class="col-xs-3 top-row">
+							<h3>%</h3>
+						</div>
+						<div class="col-xs-3 operation" ng-click="operation(); operator = 'divide';">
+							<h3>/</h3>
+						</div>
+					</div>
+
+					<div class="row text-center">
+						<div class="col-xs-3 first-button-row normal" ng-click="wholeOrDecimalFunction(7);">
+							<h3>7</h3>
+						</div>
+						<div class="col-xs-3 normal" ng-click="wholeOrDecimalFunction(8);">
+							<h3>8</h3>
+						</div>
+						<div class="col-xs-3 normal" ng-click="wholeOrDecimalFunction(9);">
+							<h3>9</h3>
+						</div>
+						<div class="col-xs-3 operation" ng-click="operation(); operator = 'multiply';">
+							<h3>x</h3>
+						</div>
+					</div>
+
+					<div class="row text-center">
+						<div class="col-xs-3 first-button-row normal" ng-click="wholeOrDecimalFunction(4);">
+							<h3>4</h3>
+						</div>
+						<div class="col-xs-3 normal" ng-click="wholeOrDecimalFunction(5);">
+							<h3>5</h3>
+						</div>
+						<div class="col-xs-3 normal" ng-click="wholeOrDecimalFunction(6);">
+							<h3>6</h3>
+						</div>
+						<div class="col-xs-3 operation" ng-click="operation(); operator = 'subtract';">
+							<h3>-</h3>
+						</div>
+					</div>
+					
+					<div class="row text-center">
+						<div class="col-xs-3 first-button-row normal" ng-click="wholeOrDecimalFunction(1);">
+							<h3>1</h3>
+						</div>
+						<div class="col-xs-3 normal" ng-click="wholeOrDecimalFunction(2);">
+							<h3>2</h3>
+						</div>
+						<div class="col-xs-3 normal" ng-click="wholeOrDecimalFunction(3);">
+							<h3>3</h3>
+						</div>
+						<div class="col-xs-3 operation" ng-click="operation(); operator = 'add'; draftHalf = 0; draftHalfDecimal = 0">
+							<h3>+</h3>
+						</div>
+					</div>
+
+					<div class="row text-center">
+						<div class="col-xs-6 first-button-row normal" ng-click="wholeOrDecimalFunction(0);">
+							<h3>0</h3>
+						</div>
+						
+						<div class="col-xs-3 normal" ng-click="wholeOrDecimal = 'decimal';">
+							<h3>.</h3>
+						</div>
+						<div class="col-xs-3 operation" ng-click="operation(); operator = 'equal';">
+							<h3>=</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/jquery-1.12.3.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/app.js"></script>
+
+</body>
+</html>

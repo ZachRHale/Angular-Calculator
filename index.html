@@ -84,7 +84,7 @@
 						<div class="col-xs-3 normal" ng-click="wholeOrDecimalFunction(3);">
 							<h3>3</h3>
 						</div>
-						<div class="col-xs-3 operation" ng-click="operation(); operator = 'add'; draftHalf = 0; draftHalfDecimal = 0">
+						<div class="col-xs-3 operation" ng-click="operation(); operator = 'add'; finalNumber = 0;">
 							<h3>+</h3>
 						</div>
 					</div>
@@ -97,7 +97,7 @@
 						<div class="col-xs-3 normal" ng-click="wholeOrDecimal = 'decimal';">
 							<h3>.</h3>
 						</div>
-						<div class="col-xs-3 operation" ng-click="operation(); operator = 'equal';">
+						<div class="col-xs-3 operation" ng-click="operation();">
 							<h3>=</h3>
 						</div>
 					</div>
@@ -108,10 +108,8 @@
 
 
 
-	<script src="scripts/angular.min.js"></script>
-	<script src="scripts/jquery-1.12.3.min.js"></script>
-	<script src="scripts/bootstrap.min.js"></script>
-	<script src="scripts/app.js"></script>
+
+	<script src="bundle.js"></script>
 
 </body>
 </html>

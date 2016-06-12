@@ -61,8 +61,6 @@ var app = angular.module("calculator", [])
 
     $scope.operation = function() {
 
-    	
-
     	if ($scope.operator == 'add'){
     		$scope.total = $scope.total + $scope.finalNumber;
     		$scope.displayNumber = $scope.total;
